@@ -1,0 +1,33 @@
+Analyse du projet: Gestion des  approvisionnements , des ventes et la suivie  des dettes d’une Boutique de la Place
+
+        Module 1:
+
+L'objectif de ce module est de développer une app qui permet au boutiquier de créer des clients, 
+enregistrer leurs dettes, enregistrer le paiement d'une dette
+
+        Les Acteurs: 
+- Le boutiquier (A.P)
+- Le client (A.S)
+
+
+        Les objets et leurs caractéristiques:
+
+- Boutiquier: photo, nom, prenom, adresse, telephone, email, password
+- Client: id, nom, prenom, photo, telephone, adresse, email
+- Categorie-client: id, libellé, privilège
+- Article: nom, prix, qte Stock
+- Dette: id, numero, date, montant total, montant versé, etat
+- Paiement: id, montant, date
+- CompteClient: id, numero, solde
+
+        Focntionnalités:
+
+Le boutiquier doit se connecter.
+Le boutiquier peut lister les clients, filtrer par etat (endettés ou non), pouvoir modifier leur categorie.
+Il peut enregistrer une dette (indiquer les arcticles et la quantité) pour un client s'il existe et si categorie != Non-solvable . 
+Sinon il doit créer le client, lui affecter une catégorie (Nouveau, Solvable, Non-solvable, Fidèle)
+Le boutiquier peut lister les dettes et afficher la fiche client s'il clique sur un client.
+La fiche doit contenir les infos du client, ses dettes non soldées, le montant total dû et le montant à versé et aussi la liste de ses dettes.
+A partir de cette fiche il peut enregistrer un paiement et voir l'historique des paiements d'une dette.
+Un reçu doit être imprimé après chaque paiement.
+
