@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="../../public/css/output.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <title>Dettes</title>
+</head>
+<body>
+
+    <nav class="fixed top-0 z-50 w-full bg-blue-900 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+        <div class="px-3 py- lg:px-5 lg:pl-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center w-30 justify-start rtl:justify-end ">
+                <a href="" class="flex ms-2 md:me-24">
+                    <img src="../../public/assets/logo.png" class="h-10 me-1 mt-3" alt="Logo" />
+                    <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-white dark:text-white">DIALLO BOUTIK</span>
+                </a>
+                <div class="flex justify-start border-2 ">
+                    <img src="../../public/assets/Menu.png" alt="">
+                </div>
+                </div>
+            
+                <div class="flex items-center">
+                    <div class="flex items-center ms-3">
+                    <div>
+                        <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                            <img class="w-8 h-8 rounded-full" src="../../public/assets/avatar1.jpeg" alt="user">
+                        </button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <aside id="logo-sidebar" class="fixed bg-blue-900 dark:bg-blue-900 top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full border-r border-gray-200 sm:translate-x-0 " aria-label="Sidebar">
+        <div class="h-full px-3 pb-4 overflow-y-auto flex flex-col justify-between">
+        <ul class="space-y-2 font-medium">
+            <li class="">
+                <a href="../dashboad.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                <svg class="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                    <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z"/>
+                    </svg>
+                    <span class="ms-3 text-white dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="../clients/index.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <svg class="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                    <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"/>
+                    </svg>
+                    <span class="flex-1 ms-3 whitespace-nowrap text-white dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">Clients</span>
+                </a>
+            </li>
+            <li>
+                <a href="../dettes/index.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <svg class="flex-shrink-0 w-5 h-5 text-white transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                    <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"/>
+                    </svg>
+                    <span class="flex-1 ms-3 whitespace-nowrap text-white dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">Dettes</span>
+                </a>
+            </li>
+        </ul>
+        <div>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
+                </svg>
+                <span class="flex-1 ms-3 whitespace-nowrap text-white dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">Sign In</span>
+                </a>
+        </div>
+        </div> 
+    </aside>
+
+    <div class="sm:ml-64">
+        <div class="p-4 rounded-lg mt-14">
+            <div class="grid grid-cols-12 gap-4 mb-4">
+                <div class="flex items-center justify-between h-10 px-3">
+                    <div>
+                        <h1 class="text-2xl font-bold dark:text-white "> Liste des Dettes </h1>
+                    </div>
+                    <div class="">
+                        <div class="relative max-w-sm ">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                                </svg>
+                            </div>
+                            <input datepicker id="default-datepicker" type="text" class="bg-gray-50 border border-blue-900 text-blue-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Choisir une date">
+                        </div>
+                        <!-- <input type="date" value="" class="h-9 border rounded bg-blue-900 text-white "> -->
+                    </div>
+                </div>
+                <div class="flex items-center justify-between align-center h-20 rounded">
+                    <div class="">
+                        <input type="search" value="" class="h-10 w-80 rounded-full me-2" placeholder="Filtrer par Client">
+                        <button class="bg-blue-900 hover:bg-blue-800 px-3 py-2 rounded-lg text-white"> OK </button>
+                    </div>
+                    <div class="">
+                        <button class="text-white bg-blue-500 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"> Tous </button>
+                        <button class="text-white bg-green-500 hover:bg-green-800 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"> Soldées </button>
+                        <button class="text-white bg-red-500 hover:bg-red-800 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"> Non soldées </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end pb-2">
+                <button type="button" data-modal-target="static-modal-2" data-modal-toggle="static-modal-2" class="text-white bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Ajouter une dette</button>
+            </div>
+            <div class="w-100 h-50 mb-4 rounded bg-gray-50 dark:bg-gray-800 border-2">
+                <div class="relative overflow-x-auto shadow-md sm:rounded-lg w-100 ">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <thead class="text-white  bg-blue-900 ">
+                            <tr>
+                                <th scope="row" class="px-6 py-3 text-center">
+                                    Client 
+                                </th>
+                                <th scope="row" class="px-6 py-3 text-center">
+                                    Telephone
+                                </th>
+                                <th scope="row" class="px-6 py-3 text-center">
+                                    Date
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-center">
+                                    Montant total
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-center">
+                                    Montant versé
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-center">
+                                    Montant dû
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-center">
+                                    Etat
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-center">
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <td class="px-6 py-4 text-center">
+                                    Mamadou Diang Diallo
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    776923351
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    30/07/2024
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    50.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    35.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    15.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <p class="bg-red-600 text-white py-1"> Non soldée </p>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <button type="button" data-modal-target="static-modal" data-modal-toggle="static-modal" class="font-bold text-blue-900 underline">Voir détails</button>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <td class="px-6 py-4 text-center">
+                                    Mamadou Diang Diallo
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    776923351
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    30/07/2024
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    50.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    35.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    15.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <p class="bg-red-600 text-white py-1"> Non soldée </p>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <button type="button" data-modal-target="static-modal" data-modal-toggle="static-modal" class="font-bold text-blue-900 underline">Voir détails</button>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <td class="px-6 py-4 text-center">
+                                    Mamadou Diang Diallo
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    776923351
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    30/07/2024
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    50.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    35.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    15.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <p class="bg-red-600 text-white py-1"> Non soldée </p>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <button type="button" data-modal-target="static-modal" data-modal-toggle="static-modal" class="font-bold text-blue-900 underline">Voir détails</button>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <td class="px-6 py-4 text-center">
+                                    Mamadou Diang Diallo
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    776923351
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    30/07/2024
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    50.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    35.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    15.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <p class="bg-red-600 text-white py-1"> Non soldée </p>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <button type="button" data-modal-target="static-modal" data-modal-toggle="static-modal" class="font-bold text-blue-900 underline">Voir détails</button>
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <td class="px-6 py-4 text-center">
+                                    Mamadou Diang Diallo
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    776923351
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    30/07/2024
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    50.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    35.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    15.000
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <p class="bg-red-600 text-white py-1"> Non soldée </p>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <button type="button" data-modal-target="static-modal" data-modal-toggle="static-modal" class="font-bold text-blue-900 underline">Voir détails</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex items-center justify-center h-20 mb-4">
+                <nav aria-label="Page navigation example">
+                    <ul class="flex items-center -space-x-px h-10 text-base">
+                        <li>
+                            <a href="#" class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                                <svg class="w-3 h-3 rtl:rotate-180 me-2 mt-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                                </svg>
+                                <span class="flex justify-center align-center ">Previous</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-current="page" class="flex items-center justify-center px-4 h-10 leading-tight text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">3</a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                                <span class="">Next</span>
+                                <svg class="w-3 h-3 rtl:rotate-180 ms-2 mt-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main modal 1 -->
+    <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                    <div class="flex">
+                        <img src="../../public/assets/avatar1.jpeg" alt="" class="w-20 h-20 rounded-full">
+                        <div class="ms-3 flex">
+                            <div class="flex flex-col justify-center">
+                                <p><span class="font-bold">Prenom: </span> <span>Mamadou Diang</span></p>
+                                <p class="mt-2"><span class="font-bold me-5">Nom: </span> <span>Diallo</span></p>
+                            </div>
+                            <div class="ms-8 flex flex-col justify-center">
+                                <p><span class="font-bold">Telephone: </span> <span>776923351</span></p>
+                                <p class="mt-2"><span class="font-bold me-1">Categorie: </span> <span>Fidèle</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="static-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5 space-y-4">
+                    <div class="flex justify-between">
+                        <h1 class="font-medium text-xl"> Dettes du client </h1>
+                        <!-- <button class="text-white bg-blue-500 hover:bg-blue-800 font-medium rounded-lg text-sm px-3 py-2 "> Paiement </button> -->
+                    </div>
+                    <div class="relative overflow-x-auto shadow-md sm:rounded-lg w-100">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                            <thead class="text-white  bg-blue-900 ">
+                                <tr>
+                                    <th scope="row" class="px-6 py-3 text-center">
+                                        Date
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-center">
+                                        M. Total
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-center">
+                                        M. Versé
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-center">
+                                        M. Dû
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-center">
+                                        Action
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                    <td class="px-4 py-4 text-center">
+                                        25/07/2024
+                                    </td>
+                                    <td class="px-4 py-4 text-center">
+                                        50.000
+                                    </td>
+                                    <td class="px-4 py-4 text-center">
+                                        35.000
+                                    </td>
+                                    <td class="px-4 py-4 text-center">
+                                        15.000
+                                    </td>
+                                    <td class="px-4 py-4 text-center">
+                                        <button type="button" data-modal-target="static-modal" data-modal-toggle="static-modal" class="font-bold text-blue-900 underline"> Payer </button>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                    <td class="px-4 py-4 text-center">
+                                        25/07/2024
+                                    </td>
+                                    <td class="px-4 py-4 text-center">
+                                        50.000
+                                    </td>
+                                    <td class="px-4 py-4 text-center">
+                                        35.000
+                                    </td>
+                                    <td class="px-4 py-4 text-center">
+                                        15.000
+                                    </td>
+                                    <td class="px-4 py-4 text-center">
+                                        <button type="button" data-modal-target="static-modal" data-modal-toggle="static-modal" class="font-bold text-blue-900 underline"> Payer </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="p-4 ">
+                    <h1 class="font-medium text-xl"> Ajouter un paiement </h1>           
+                    <form class="flex justify-start">
+                        <input type="text" id="input" aria-label="input" class="me-3 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-40 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="" placeholder="Montant">
+                        <!-- <div class="relative max-w-sm me-3">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                                </svg>
+                            </div>
+                            <input datepicker id="default-datepicker" type="text" class="bg-gray-50 border border-blue-900 text-blue-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Choisir une date">
+                        </div> -->
+                        <input type="date" id="input-2" aria-label="input2" class=" me-3 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-40 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="" >
+                        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enregistrer</button>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <!-- <button data-modal-hide="static-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button> -->
+                    <button data-modal-hide="static-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Annuler</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main modal 2 -->
+    <div id="static-modal-2" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                    <div class="flex">
+                        <div class="">
+                            <form class="flex justify-start mx-auto">
+                                <div class="relative w-80">
+                                    <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-5 p-2  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Telephone" required />
+                                </div>
+                                <button type="submit" class="p-2 ms-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    OK
+                                </button>
+                            </form>
+                            <div class="flex mt-3">
+                                <input type="text" id="disabled-input" aria-label="disabled input" class="me-2 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="" placeholder="Prenom" disabled>
+                                <input type="text" id="disabled-input-2" aria-label="disabled input2" class="me-2 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="" placeholder="Nom" disabled readonly>
+                                <input type="text" id="disabled-input-2" aria-label="disabled input2" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="" placeholder="Categorie" disabled readonly>
+                            </div>
+                        </div>
+                        <button type="button" class="border text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="static-modal">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5 space-y-4">
+                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                        <div class="flex">
+                            <div class="">
+                                <form class="flex justify-start mx-auto">
+                                    <div class="relative w-80">
+                                        <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-5 p-2  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Article" required />
+                                    </div>
+                                    <button type="submit" class="p-2 ms-2 me-3 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                        OK
+                                    </button>
+                                </form>
+                                <div class="flex mt-3">
+                                    <input type="number" id="input-2" aria-label="input2" class="me-2 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="" placeholder="Quantité">
+                                    <input type="text" id="disabled-input" aria-label="disabled input" class="ms-5 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="" placeholder="Prix" disabled>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="p-4 md:p-5 space-y-4">
+                    <div class="relative overflow-x-auto shadow-md sm:rounded-lg w-100 ">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                            <thead class="text-white  bg-blue-900 ">
+                                <tr>
+                                    <th scope="row" class="px-6 py-3 text-center">
+                                        Article 
+                                    </th>
+                                    <th scope="row" class="px-6 py-3 text-center">
+                                        Prix Unitaire
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-center">
+                                        Quantité
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-center">
+                                        Prix Total
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-center">
+                                        Action
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                    <td class="px-6 py-4 text-center">
+                                        Sachet lait
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        100 fr
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        5
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        500fr
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        <button type="button" data-modal-target="static-modal" data-modal-toggle="static-modal" class="font-bold text-blue-900 underline">Supprimer</button>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                    <td class="px-6 py-4 text-center">
+                                        Sachet lait
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        100 fr
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        5
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        500fr
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        <button type="button" data-modal-target="static-modal" data-modal-toggle="static-modal" class="font-bold text-blue-900 underline">Supprimer</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="font-medium text-2xl">Total: <span>1000fr</span></p>
+                        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enregistrer</button>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <!-- <button data-modal-hide="static-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button> -->
+                    <button data-modal-hide="static-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Annuler</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</body>
+</html>
