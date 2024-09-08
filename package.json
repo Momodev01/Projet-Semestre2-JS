@@ -1,0 +1,25 @@
+{
+  "name": "projet-semestre2-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tails": "tailwindcss -i ./public/css/tails.css -o ./public/css/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "boxicons": "^2.1.4",
+    "flowbite": "^2.4.1",
+    "json-server": "^1.0.0-beta.1"
+  },
+  "devDependencies": {
+    "install": "^0.13.0",
+    "npm": "^10.8.2",
+    "tailwindcss": "^3.4.7"
+  }
+}
