@@ -1,6 +1,0 @@
-users (iduser, nom, prenom, photo, adresse, telephone, email, password)
-clients (idcl, nom, prenom, photo, adresse, telephone, email)
-dettes (iddt, numero, date, montant, etat)
-articles (idart, libelle, prixUnitaire, qteStock)
-articlesDette (qteArticle, #iddt, #idart)
-paiement (idpmt, reference, date, montant)
